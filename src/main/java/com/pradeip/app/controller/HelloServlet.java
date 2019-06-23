@@ -9,15 +9,17 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "MyServlet", urlPatterns = { "" })
+@WebServlet(name = "MyServlet", urlPatterns = { "/home" })
 public class HelloServlet extends HttpServlet {
-
-	private String INDEX_PAGE = "index.jsp";
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-
-		resp.sendRedirect("home.html");
+		ServletOutputStream out = resp.getOutputStream();
+		out.print("<html><body>");
+		out.print("<h3>Hello Heroku</h3>");
+		out.print("</body></html>");
+		out.flush();
+		out.close();
 	}
 
 }
