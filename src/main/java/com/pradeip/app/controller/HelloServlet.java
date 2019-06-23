@@ -1,4 +1,4 @@
-package servlet;
+package com.pradeip.app.controller;
 
 import java.io.IOException;
 
@@ -9,15 +9,15 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-@WebServlet(name = "MyServlet", urlPatterns = { "/hello" })
+@WebServlet(name = "MyServlet", urlPatterns = { "" })
 public class HelloServlet extends HttpServlet {
+
+	private String INDEX_PAGE = "index.jsp";
 
 	@Override
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-		ServletOutputStream out = resp.getOutputStream();
-		out.write("hello heroku".getBytes());
-		out.flush();
-		out.close();
+
+		resp.sendRedirect("home.html");
 	}
 
 }

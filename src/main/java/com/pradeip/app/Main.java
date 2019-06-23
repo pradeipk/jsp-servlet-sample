@@ -1,4 +1,4 @@
-package launch;
+package com.pradeip.app;
 
 import java.io.File;
 import java.net.URISyntaxException;

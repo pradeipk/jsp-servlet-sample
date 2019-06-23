@@ -1,4 +1,4 @@
-package servlet;
+package com.pradeip.app.controller;
 
 import java.io.IOException;
 
