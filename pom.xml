@@ -1,8 +1,8 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>com.pradeip.p2</groupId>
-  <artifactId>pradeip</artifactId>
+  <groupId>com.pradeip.app</groupId>
+  <artifactId>bandhawgarh</artifactId>
   <version>1.0-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>Simple project in JSP and Servlet</name>
@@ -48,7 +48,7 @@
                 <assembleDirectory>target</assembleDirectory>
                 <programs>
                     <program>
-                        <mainClass>launch.Main</mainClass>
+                        <mainClass>com.pradeip.app.Main</mainClass>
                         <name>webapp</name>
                     </program>
                 </programs>
